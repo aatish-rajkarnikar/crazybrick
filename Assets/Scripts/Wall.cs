@@ -6,10 +6,14 @@ public class Wall : MonoBehaviour {
 
 	public delegate void DestroyEvent();
 	public static event DestroyEvent OnDestroy;
-
+	private ScoreManager scoreManager;
 
 	void Start () {
-		
+		GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
+		if (gameControllerObject != null)
+		{
+			scoreManager = gameControllerObject.GetComponent <ScoreManager>();
+		}
 	}
 	
 	void Update () {
@@ -22,6 +26,6 @@ public class Wall : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log ("Add One Point");
+		scoreManager.addScore ();
 	}
 }

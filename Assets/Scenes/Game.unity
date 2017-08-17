@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 990358222}
   m_Layer: 0
   m_Name: Manager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe728b6176d341ca87aab0dbd93fa38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
+  scoreText: {fileID: 1150929793}
 --- !u!4 &990358223
 Transform:
   m_ObjectHideFlags: 0

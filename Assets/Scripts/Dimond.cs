@@ -14,10 +14,16 @@ public class Dimond : MonoBehaviour {
 	private Rigidbody2D rigidbody2d;
  	
 	BannerView bannerView;
+	private ScoreManager scoreManager;
 
 	void Start () {
 		rigidbody2d = GetComponent<Rigidbody2D> ();
 		RequestBanner();
+		GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
+		if (gameControllerObject != null)
+		{
+			scoreManager = gameControllerObject.GetComponent <ScoreManager>();
+		}
 	}
 	
 	void Update () {
@@ -76,6 +82,7 @@ public class Dimond : MonoBehaviour {
 		if (coll.gameObject.tag == "Wall") {
 			isDead = true;
 			gameObject.GetComponent<Collider2D> ().enabled = false;
+			scoreManager.saveScore ();
 			Invoke ("GameOver", 2);
 		}
 	}

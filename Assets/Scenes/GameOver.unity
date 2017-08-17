@@ -206,6 +206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playAgainButton: {fileID: 307253773}
+  scoreText: {fileID: 1097652583}
+  bestText: {fileID: 2125221242}
 --- !u!4 &98170016
 Transform:
   m_ObjectHideFlags: 0
