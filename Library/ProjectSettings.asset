@@ -6,20 +6,20 @@ PlayerSettings:
   serializedVersion: 12
   productGUID: 5c1c9936af88f49d0ba69655f4f242f0
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 0
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Aatish Rajkarnikar
   productName: CrazyBrick
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
+  m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
-  m_SplashScreenLogoStyle: 1
+  m_SplashScreenLogoStyle: 0
   m_SplashScreenDrawMode: 0
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
@@ -142,6 +142,7 @@ PlayerSettings:
   resolutionScalingMode: 0
   applicationIdentifier:
     Android: aatish.crazybrick
+    iOS: aatish.crazybrick
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -161,7 +162,7 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 
+  iOSTargetOSVersionString: 7.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 
@@ -171,22 +172,31 @@ PlayerSettings:
   uIStatusBarHidden: 1
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
-  iPhoneSplashScreen: {fileID: 0}
-  iPhoneHighResSplashScreen: {fileID: 0}
-  iPhoneTallHighResSplashScreen: {fileID: 0}
-  iPhone47inSplashScreen: {fileID: 0}
-  iPhone55inPortraitSplashScreen: {fileID: 0}
-  iPhone55inLandscapeSplashScreen: {fileID: 0}
-  iPadPortraitSplashScreen: {fileID: 0}
-  iPadHighResPortraitSplashScreen: {fileID: 0}
-  iPadLandscapeSplashScreen: {fileID: 0}
-  iPadHighResLandscapeSplashScreen: {fileID: 0}
+  iPhoneSplashScreen: {fileID: 2800000, guid: dfe01bc9c45d6406ca46902a5ea963c1, type: 3}
+  iPhoneHighResSplashScreen: {fileID: 2800000, guid: 803466ff1b3fc45bca34e560192ace2e,
+    type: 3}
+  iPhoneTallHighResSplashScreen: {fileID: 2800000, guid: d25c5647fee884b21abbfde7a179a4d9,
+    type: 3}
+  iPhone47inSplashScreen: {fileID: 2800000, guid: 742547f9ce260498e80e45882e51f859,
+    type: 3}
+  iPhone55inPortraitSplashScreen: {fileID: 2800000, guid: fe03ea62eb32440b990397d3691a0303,
+    type: 3}
+  iPhone55inLandscapeSplashScreen: {fileID: 2800000, guid: e5d52b5ca35304a398e706c246846e1c,
+    type: 3}
+  iPadPortraitSplashScreen: {fileID: 2800000, guid: 10890797fd2dd4ade9e62f86cb7d81c1,
+    type: 3}
+  iPadHighResPortraitSplashScreen: {fileID: 2800000, guid: 8e26a165a89d242108101a39974e99cc,
+    type: 3}
+  iPadLandscapeSplashScreen: {fileID: 2800000, guid: a238a0c94b768498591a4d5735ab1cdd,
+    type: 3}
+  iPadHighResLandscapeSplashScreen: {fileID: 2800000, guid: c07486658dcc5473297b0de9cacb0f96,
+    type: 3}
   appleTVSplashScreen: {fileID: 0}
   tvOSSmallIconLayers: []
   tvOSLargeIconLayers: []
   tvOSTopShelfImageLayers: []
   tvOSTopShelfImageWideLayers: []
-  iOSLaunchScreenType: 0
+  iOSLaunchScreenType: 3
   iOSLaunchScreenPortrait: {fileID: 0}
   iOSLaunchScreenLandscape: {fileID: 0}
   iOSLaunchScreenBackgroundColor:
@@ -195,7 +205,7 @@ PlayerSettings:
   iOSLaunchScreenFillPct: 100
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
-  iOSLaunchScreeniPadType: 0
+  iOSLaunchScreeniPadType: 3
   iOSLaunchScreeniPadImage: {fileID: 0}
   iOSLaunchScreeniPadBackgroundColor:
     serializedVersion: 2
@@ -221,14 +231,20 @@ PlayerSettings:
   AndroidKeyaliasName: 
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
-  androidEnableBanner: 1
+  androidEnableBanner: 0
   m_AndroidBanners:
   - width: 320
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 4ce5a5c87a68041769c21895eebd2ba5, type: 3}
+      m_Width: 128
+      m_Height: 128
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
@@ -497,7 +513,8 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    4: 2
   platformArchitecture: {}
   scriptingBackend: {}
   incrementalIl2cppBuild: {}
@@ -589,12 +606,12 @@ PlayerSettings:
     Collab: 0
     ErrorHub: 0
     Hub: 0
-    UNet: 1
+    UNet: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: e31ffd8e-5409-491d-a84c-9517170dcf68
-  projectName: CrazyBrick
-  organizationId: aatish_rajkarnikar
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
