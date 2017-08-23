@@ -5,8 +5,11 @@ using UnityEngine;
 public class SpwanerWall : MonoBehaviour {
 
 	public GameObject wall;
-	// Use this for initialization
+
+	private GameObject player;
+
 	void Start () {
+		player = GameObject.Find ("Player");
 		for (int i = 0; i < 4; i++) {
 			move ();
 			createWall ();
